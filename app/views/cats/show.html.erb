@@ -1,0 +1,21 @@
+<h1><%= "#{@cat.name}'s Attributes" %></h1>
+
+
+<table>
+    <tr>
+        <td> birth_date </td>
+        <td> color </td>
+        <td> name </td>
+        <td> sex </td>
+        <td> description </td>
+    </tr>
+    <tr>
+        <td><%= "#{@cat.birth_date}" %></td>
+        <td><%= "#{@cat.color}" %></td>
+        <td><%= "#{@cat.name}" %></td>
+        <td><%= "#{@cat.sex}" %></td>
+        <td> "<%= @cat.description %>" </td>
+    </tr>
+</table>
+
+<%= link_to "edit cat", edit_cat_url(@cat.id) %>
